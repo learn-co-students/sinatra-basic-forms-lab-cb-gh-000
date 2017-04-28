@@ -10,6 +10,7 @@ class App < Sinatra::Base
     erb :create_puppy
   end
 
-
-  # TODO - third controller action that takes the input from the user and renders a third view (views/display_puppy.erb) which displays the info for the puppy that was just created.
+  post '/display_puppy' do
+    erb :display_puppy
+  end
 end
