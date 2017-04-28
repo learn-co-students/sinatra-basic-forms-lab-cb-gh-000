@@ -6,7 +6,10 @@ class App < Sinatra::Base
     erb :index
   end
 
-  # TODO - Set up another controller action for a user to be able to view this form in the browser.
+  get '/create_puppy' do
+    erb :create_puppy
+  end
+
 
   # TODO - third controller action that takes the input from the user and renders a third view (views/display_puppy.erb) which displays the info for the puppy that was just created.
 end
