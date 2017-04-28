@@ -1,8 +1,10 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-  # TODO - Build out a GET request to load a home page. The home page should go to the main route /.
-  # TODO - The home page will also need a new view index.erb. This page should welcome you to the Puppy Adoption Site. Add this view to the controller action.
+
+  get '/' do
+    erb :index
+  end
 
   # TODO - Set up another controller action for a user to be able to view this form in the browser.
 
